@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ElectViz Election Data Visualization On For Media</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- DARK MODE TOGGLE -->
+<button id="darkToggle">🌙</button>
+
+<!-- HERO -->
+<header class="hero reveal">
+  <h1>Election Data Visualization</h1>
+  <p>Exploring voter trends through data analysis and dashboards</p>
+  <a href="#about" class="btn">Explore Project</a>
+</header>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="#about">About</a>
+  <a href="#dashboard">Dashboard</a>
+  <a href="#colab">Data Processing</a>
+  <a href="#insights">Insights</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- ABOUT -->
+<section id="about" class="card reveal">
+  <h2>About the Project</h2>
+  <p>
+    This project focuses on analyzing election data to understand voting patterns,
+    trends, and insights. Using data preprocessing techniques and visualization tools,
+    the project transforms raw data into meaningful dashboards.
+  </p>
+
+  <div class="tags">
+    <span>Power BI</span>
+    <span>Python</span>
+    <span>Google Colab</span>
+    <span>Data Visualization</span>
+  </div>
+</section>
+
+<!-- DASHBOARD -->
+<section id="dashboard" class="card reveal">
+  <h2>Dashboard</h2>
+  <p>Preview of the Election Data Dashboard:</p>
+
+  <iframe src="dashboard.pdf" width="100%" height="500px"></iframe>
+
+  <div style="margin-top: 15px;">
+    <a href="dashboard.pdf" class="btn" target="_blank">View Full Screen</a>
+    <a href="dashboard.pdf" class="btn" download>Download PDF</a>
+  </div>
+</section>
+
+<!-- COLAB -->
+<section id="colab" class="card reveal">
+  <h2>Data Preprocessing</h2>
+
+  <p>
+    Data cleaning and preprocessing were performed using Python in Google Colab.
+  </p>
+
+  <a href="https://colab.research.google.com/github/Vasavi-64/ElectvizElectionDataVisualiszationOnForMedia/blob/main/ElectViz_Election_Data_Visualization_on_for_Media.ipynb"
+     target="_blank"
+     class="btn">
+     Open Colab Notebook
+  </a>
+</section>
+
+<!-- INSIGHTS -->
+<section id="insights" class="card reveal">
+  <h2>Key Insights</h2>
+
+  <div class="grid">
+    <div class="box">Urban areas show higher voter participation</div>
+    <div class="box">Data cleaning improved dataset consistency</div>
+    <div class="box">Regional patterns highlight voting behavior</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="card reveal">
+  <h2>Contact</h2>
+
+  <p><strong>Name:Naga Venkata Vasavi Jayavarapu</strong> Your Name</p>
+  <p><strong>Email:</strong> vasavijayyavarapu@gmail.com</p>
+  <p><strong>LinkedIn:</strong> Your Profile Link</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 ElectViz Election Data Visualization On For Media Project</p>
+</footer>
+
+<!-- SCRIPT -->
+<script>
+  // SCROLL ANIMATION
+  const reveals = document.querySelectorAll(".reveal");
+
+  function revealOnScroll() {
+    reveals.forEach((el) => {
+      const windowHeight = window.innerHeight;
+      const elementTop = el.getBoundingClientRect().top;
+
+      if (elementTop < windowHeight - 100) {
+        el.classList.add("active");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", revealOnScroll);
+
+  // DARK MODE
+  const toggle = document.getElementById("darkToggle");
+
+  toggle.onclick = () => {
+    document.body.classList.toggle("dark");
+  };
+</script>
+
+</body>
+</html>
