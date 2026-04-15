@@ -2,140 +2,209 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>ElectViz Election Data Visualization On For Media</title>
+  <title>Elect-Viz Election Data Visualization On For Media</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- DARK MODE TOGGLE -->
 <button id="darkToggle">🌙</button>
 
 <!-- HERO -->
 <header class="hero reveal">
-  <h1>Election Data Visualization</h1>
-  <p>Exploring voter trends through data analysis and dashboards</p>
+  <h1>Elect-Viz</h1>
+  <p>Election Data Visualization On For Media</p>
   <a href="#about" class="btn">Explore Project</a>
 </header>
 
 <!-- NAVBAR -->
 <nav class="navbar">
-  <a href="#about">About</a>
-  <a href="#dashboard">Dashboard</a>
-  <a href="#colab">Data Processing</a>
-  <a href="#insights">Insights</a>
-  <a href="#contact">Contact</a>
+  <a href="#about" class="nav-link">About</a>
+  <a href="#dashboard" class="nav-link">Dashboard</a>
+  <a href="#dax" class="nav-link">DAX</a>
+  <a href="#colab" class="nav-link">Data</a>
+  <a href="#dataset" class="nav-link">Dataset</a>
+  <a href="#insights" class="nav-link">Insights</a>
+  <a href="#contact" class="nav-link">Contact</a>
 </nav>
+
+<!-- STATS -->
+<section class="card reveal">
+  <h2>📊 Project Statistics</h2>
+  <div class="grid">
+    <div class="box"><h3 class="counter" data-target="100">0</h3><p>Records</p></div>
+    <div class="box"><h3 class="counter" data-target="5">0</h3><p>Dashboards</p></div>
+    <div class="box"><h3 class="counter" data-target="10">0</h3><p>DAX Measures</p></div>
+    <div class="box"><h3 class="counter" data-target="3">0</h3><p>Tools Used</p></div>
+  </div>
+</section>
 
 <!-- ABOUT -->
 <section id="about" class="card reveal">
-  <h2>About the Project</h2>
-  <p>
-    This project focuses on analyzing election data to understand voting patterns,
-    trends, and insights. Using data preprocessing techniques and visualization tools,
-    the project transforms raw data into meaningful dashboards.
-  </p>
-
-  <div class="tags">
-    <span>Power BI</span>
-    <span>Python</span>
-    <span>Google Colab</span>
-    <span>Data Visualization</span>
-  </div>
+  <h2>📌 About</h2>
+  <p>This project analyzes Indian election data using preprocessing techniques and dashboards to generate meaningful insights.</p>
 </section>
 
 <!-- DASHBOARD -->
 <section id="dashboard" class="card reveal">
-  <h2>Dashboard</h2>
-  <p>Preview of the Election Data Dashboard:</p>
+  <h2>📊 Dashboard</h2>
+  <iframe src="dashboard.pdf" width="100%" height="500"></iframe>
+  <div>
+    <a href="dashboard.pdf" class="btn" target="_blank">View</a>
+    <a href="dashboard.pdf" class="btn" download>Download</a>
+  </div>
+</section>
 
-  <iframe src="dashboard.pdf" width="100%" height="500px"></iframe>
+<!-- DAX -->
+<section id="dax" class="card reveal">
+  <h2>🧠 DAX Analysis</h2>
 
-  <div style="margin-top: 15px;">
-    <a href="dashboard.pdf" class="btn" target="_blank">View Full Screen</a>
-    <a href="dashboard.pdf" class="btn" download>Download PDF</a>
+  <p>DAX formulas were used to create calculated measures and enhance dashboard interactivity.</p>
+
+  <ul>
+    <li>Calculated measures</li>
+    <li>KPI analysis</li>
+    <li>Dynamic filtering</li>
+    <li>Improved analytics</li>
+  </ul>
+
+  <iframe src="dax-presentation.pdf" width="100%" height="500"></iframe>
+
+  <div>
+    <a href="dax-presentation.pdf" class="btn" target="_blank">View</a>
+    <a href="dax-presentation.pdf" class="btn" download>Download</a>
   </div>
 </section>
 
 <!-- COLAB -->
 <section id="colab" class="card reveal">
-  <h2>Data Preprocessing</h2>
+  <h2>🧹 Data Preprocessing</h2>
+  <a href="https://colab.research.google.com/github/Vasavi-64/ElectvizElectionDataVisualiszationOnForMedia/blob/main/ElectViz_Election_Data_Visualization_on_for_Media.ipynb"
+     target="_blank" class="btn">Open Colab Notebook</a>
+</section>
+
+<!-- DATASET -->
+<section id="dataset" class="card reveal">
+  <h2>📂 Dataset</h2>
 
   <p>
-    Data cleaning and preprocessing were performed using Python in Google Colab.
+    The dataset used in this project contains Indian General Election data 
+    used for preprocessing and dashboard creation.
   </p>
 
-  <a href="https://colab.research.google.com/github/Vasavi-64/ElectvizElectionDataVisualiszationOnForMedia/blob/main/ElectViz_Election_Data_Visualization_on_for_Media.ipynb"
-     target="_blank"
-     class="btn">
-     Open Colab Notebook
+  <ul>
+    <li>Structured election data</li>
+    <li>Used in Google Colab preprocessing</li>
+    <li>Supports analysis and visualization</li>
+  </ul>
+
+  <a href="Indian General Election.csv" class="btn" download>
+    Download Dataset
   </a>
 </section>
 
 <!-- INSIGHTS -->
 <section id="insights" class="card reveal">
-  <h2>Key Insights</h2>
-
+  <h2>📈 Key Insights</h2>
   <div class="grid">
-    <div class="box">Urban areas show higher voter participation</div>
-    <div class="box">Data cleaning improved dataset consistency</div>
-    <div class="box">Regional patterns highlight voting behavior</div>
+    <div class="box">Urban voter turnout is higher</div>
+    <div class="box">Data cleaning improved accuracy</div>
+    <div class="box">Regional patterns identified</div>
+    <div class="box">Supports better decision making</div>
   </div>
 </section>
 
-  <section class="card reveal">
-  <h2>Project Highlights</h2>
+<!-- FEATURES -->
+<section class="card reveal">
+  <h2>⭐ Features</h2>
+  <div class="grid">
+    <div class="box">Interactive dashboards</div>
+    <div class="box">DAX-based calculations</div>
+    <div class="box">Data preprocessing</div>
+    <div class="box">User-friendly design</div>
+  </div>
+</section>
 
+<!-- WORKFLOW -->
+<section class="card reveal">
+  <h2>🔄 Workflow</h2>
+  <ol>
+    <li>Data Collection</li>
+    <li>Data Cleaning</li>
+    <li>Processing</li>
+    <li>Dashboard Creation</li>
+    <li>Insights Generation</li>
+  </ol>
+</section>
+
+<!-- TIMELINE -->
+<section class="card reveal">
+  <h2>⏱️ Timeline</h2>
+  <div class="timeline">
+    <div class="timeline-item">Data Collection</div>
+    <div class="timeline-item">Preprocessing (Colab)</div>
+    <div class="timeline-item">Dashboard Creation</div>
+    <div class="timeline-item">Insights</div>
+  </div>
+</section>
+
+<!-- ROLE -->
+<section class="card reveal">
+  <h2>👩‍💻 My Role</h2>
   <ul>
-    <li>Built an interactive dashboard using Power BI</li>
-    <li>Performed data preprocessing using Python in Google Colab</li>
-    <li>Converted raw election data into meaningful insights</li>
-    <li>Improved data quality through cleaning and transformation</li>
-    <li>Designed a user-friendly visualization for better understanding</li>
+    <li>Data preprocessing using Python</li>
+    <li>Dashboard creation using Power BI</li>
+    <li>DAX implementation</li>
+    <li>Website development</li>
   </ul>
 </section>
+
 <!-- CONTACT -->
 <section id="contact" class="card reveal">
-  <h2>Contact</h2>
+  <h2>📞 Contact</h2>
+  <p><strong>Name:</strong> Naga Venkata Vasavi Jayavarapu</p>
+  <p><strong>LinkedIn:</strong>
+    <a href="https://www.linkedin.com/in/naga-venkata-vasavi-jayavarapu-69ba87317/" target="_blank">
+      View Profile
+    </a>
+  </p>
+</section>
 
-  <p><strong>Name:</strong>Naga Venkata Vasavi Jayavarapu</p>
-  <p><strong>Email:</strong> vasavijayyavarapu@gmail.com</p>
-  <p><strong>LinkedIn:</strong> 
- <p><a href="https://www.linkedin.com/in/naga-venkata-vasavi-jayavarapu-69ba87317/" target="_blank">
-    Naga Venkata Vasavi Jayavarapu
-  </a>
-</p>
-
-<!-- FOOTER -->
 <footer>
-  <p>© 2026 ElectViz Election Data Visualization On For Media Project</p>
+  <p>© 2026 Elect-Viz Project</p>
 </footer>
 
-<!-- SCRIPT -->
 <script>
-  // SCROLL ANIMATION
-  const reveals = document.querySelectorAll(".reveal");
+// reveal animation
+window.addEventListener("scroll", () => {
+  document.querySelectorAll(".reveal").forEach(el => {
+    if (el.getBoundingClientRect().top < window.innerHeight - 100) {
+      el.classList.add("active");
+    }
+  });
+});
 
-  function revealOnScroll() {
-    reveals.forEach((el) => {
-      const windowHeight = window.innerHeight;
-      const elementTop = el.getBoundingClientRect().top;
+// dark mode
+document.getElementById("darkToggle").onclick = () => {
+  document.body.classList.toggle("dark");
+};
 
-      if (elementTop < windowHeight - 100) {
-        el.classList.add("active");
-      }
-    });
-  }
-
-  window.addEventListener("scroll", revealOnScroll);
-
-  // DARK MODE
-  const toggle = document.getElementById("darkToggle");
-
-  toggle.onclick = () => {
-    document.body.classList.toggle("dark");
+// counters
+document.querySelectorAll(".counter").forEach(counter => {
+  const update = () => {
+    const target = +counter.dataset.target;
+    const count = +counter.innerText;
+    const inc = target / 50;
+    if (count < target) {
+      counter.innerText = Math.ceil(count + inc);
+      setTimeout(update, 30);
+    } else {
+      counter.innerText = target;
+    }
   };
+  update();
+});
 </script>
 
 </body>
