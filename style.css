@@ -1,11 +1,14 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Segoe UI';
   background: #f4f6f9;
   transition: 0.3s;
 }
 
-/* DARK MODE */
+html {
+  scroll-behavior: smooth;
+}
+
 body.dark {
   background: #121212;
   color: #eee;
@@ -15,50 +18,45 @@ body.dark .card {
   background: #1e1e1e;
 }
 
-body.dark .navbar {
-  background: #000;
-}
-
+body.dark .navbar,
 body.dark footer {
   background: #000;
 }
 
-/* DARK BUTTON */
 #darkToggle {
   position: fixed;
   top: 15px;
   right: 15px;
   padding: 10px;
-  border: none;
   border-radius: 50%;
   cursor: pointer;
 }
 
-/* HERO */
 .hero {
   background: linear-gradient(135deg, #1e3c72, #2a5298);
   color: white;
   text-align: center;
-  padding: 60px 20px;
+  padding: 60px;
 }
 
-/* BUTTON */
+.hero h1 {
+  font-size: 40px;
+}
+
 .btn {
-  display: inline-block;
-  margin-top: 15px;
   padding: 10px 20px;
   background: #ff7a18;
   color: white;
-  text-decoration: none;
   border-radius: 6px;
-  transition: 0.3s;
+  text-decoration: none;
+  margin: 5px;
+  display: inline-block;
 }
 
 .btn:hover {
   transform: scale(1.05);
 }
 
-/* NAVBAR */
 .navbar {
   background: #222;
   text-align: center;
@@ -71,60 +69,66 @@ body.dark footer {
   text-decoration: none;
 }
 
-/* CARD */
+.navbar a.active {
+  border-bottom: 2px solid #ff7a18;
+}
+
 .card {
   background: white;
   margin: 20px auto;
   padding: 20px;
   width: 85%;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* TAGS */
-.tags span {
-  background: #eee;
-  padding: 5px 10px;
-  margin: 5px;
-  border-radius: 20px;
+.card:hover {
+  transform: translateY(-5px);
 }
 
-/* GRID */
 .grid {
   display: flex;
-  gap: 15px;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
 .box {
-  flex: 1;
-  min-width: 200px;
   background: #2a5298;
   color: white;
   padding: 15px;
   border-radius: 8px;
+  flex: 1;
 }
 
-/* PDF */
+.box:hover {
+  transform: scale(1.05);
+}
+
+.timeline {
+  border-left: 3px solid #2a5298;
+  padding-left: 20px;
+}
+
+.timeline-item {
+  margin: 10px 0;
+}
+
 iframe {
-  border-radius: 10px;
   border: none;
+  border-radius: 10px;
 }
 
-/* FOOTER */
 footer {
   text-align: center;
-  padding: 15px;
+  padding: 10px;
   background: #222;
   color: white;
 }
 
-/* SCROLL ANIMATION */
 .reveal {
   opacity: 0;
   transform: translateY(40px);
-  transition: all 0.6s ease;
+  transition: 0.6s;
 }
 
 .reveal.active {
