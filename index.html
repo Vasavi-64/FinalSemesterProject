@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Elect-Viz Election Data Visualization On For Media</title>
+  <title>Elect-Viz Election Data Visualization</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -20,13 +20,13 @@
 
 <!-- NAVBAR -->
 <nav class="navbar">
-  <a href="#about" class="nav-link">About</a>
-  <a href="#dashboard" class="nav-link">Dashboard</a>
-  <a href="#dax" class="nav-link">DAX</a>
-  <a href="#colab" class="nav-link">Data</a>
-  <a href="#dataset" class="nav-link">Dataset</a>
-  <a href="#insights" class="nav-link">Insights</a>
-  <a href="#contact" class="nav-link">Contact</a>
+  <a href="#about">About</a>
+  <a href="#dashboard">Dashboard</a>
+  <a href="#dax">DAX</a>
+  <a href="#colab">Data</a>
+  <a href="#dataset">Dataset</a>
+  <a href="#insights">Insights</a>
+  <a href="#contact">Contact</a>
 </nav>
 
 <!-- STATS -->
@@ -43,31 +43,46 @@
 <!-- ABOUT -->
 <section id="about" class="card reveal">
   <h2>📌 About</h2>
-  <p>This project analyzes Indian election data using preprocessing techniques and dashboards to generate meaningful insights.</p>
+  <p>
+    This project analyzes Indian election data using preprocessing techniques 
+    and dashboards to generate meaningful insights. It also supports dynamic 
+    analysis where users can upload their own dataset.
+  </p>
 </section>
 
 <!-- DASHBOARD -->
 <section id="dashboard" class="card reveal">
   <h2>📊 Dashboard</h2>
+
+  <!-- Existing dashboard -->
   <iframe src="dashboard.pdf" width="100%" height="500"></iframe>
+
   <div>
     <a href="dashboard.pdf" class="btn" target="_blank">View</a>
     <a href="dashboard.pdf" class="btn" download>Download</a>
+  </div>
+
+  <!-- 🔥 NEW FEATURE -->
+  <div style="margin-top:40px;">
+    <h2>🚀 Live Data Analysis</h2>
+
+    <p>
+      Upload your dataset and automatically get:
+      <br>✔ Data Cleaning  
+      <br>✔ Visualizations  
+      <br>✔ Prediction  
+      <br>✔ Sentiment Analysis  
+    </p>
+
+    <a href="http://127.0.0.1:5000" target="_blank" class="btn">
+      Try Live Dashboard
+    </a>
   </div>
 </section>
 
 <!-- DAX -->
 <section id="dax" class="card reveal">
   <h2>🧠 DAX Analysis</h2>
-
-  <p>DAX formulas were used to create calculated measures and enhance dashboard interactivity.</p>
-
-  <ul>
-    <li>Calculated measures</li>
-    <li>KPI analysis</li>
-    <li>Dynamic filtering</li>
-    <li>Improved analytics</li>
-  </ul>
 
   <iframe src="dax-presentation.pdf" width="100%" height="500"></iframe>
 
@@ -80,24 +95,16 @@
 <!-- COLAB -->
 <section id="colab" class="card reveal">
   <h2>🧹 Data Preprocessing</h2>
-  <a href="https://colab.research.google.com/github/Vasavi-64/ElectvizElectionDataVisualiszationOnForMedia/blob/main/ElectViz_Election_Data_Visualization_on_for_Media.ipynb"
-     target="_blank" class="btn">Open Colab Notebook</a>
+  <a href="https://colab.research.google.com/" target="_blank" class="btn">
+    Open Colab Notebook
+  </a>
 </section>
 
 <!-- DATASET -->
 <section id="dataset" class="card reveal">
   <h2>📂 Dataset</h2>
 
-  <p>
-    The dataset used in this project contains Indian General Election data 
-    used for preprocessing and dashboard creation.
-  </p>
-
-  <ul>
-    <li>Structured election data</li>
-    <li>Used in Google Colab preprocessing</li>
-    <li>Supports analysis and visualization</li>
-  </ul>
+  <p>Indian Election dataset used for analysis.</p>
 
   <a href="Indian General Election.csv" class="btn" download>
     Download Dataset
@@ -106,68 +113,21 @@
 
 <!-- INSIGHTS -->
 <section id="insights" class="card reveal">
-  <h2>📈 Key Insights</h2>
+  <h2>📈 Insights</h2>
   <div class="grid">
-    <div class="box">Urban voter turnout is higher</div>
-    <div class="box">Data cleaning improved accuracy</div>
-    <div class="box">Regional patterns identified</div>
-    <div class="box">Supports better decision making</div>
+    <div class="box">Urban turnout higher</div>
+    <div class="box">Cleaning improves accuracy</div>
+    <div class="box">Regional trends visible</div>
+    <div class="box">Better decisions</div>
   </div>
-</section>
-
-<!-- FEATURES -->
-<section class="card reveal">
-  <h2>⭐ Features</h2>
-  <div class="grid">
-    <div class="box">Interactive dashboards</div>
-    <div class="box">DAX-based calculations</div>
-    <div class="box">Data preprocessing</div>
-    <div class="box">User-friendly design</div>
-  </div>
-</section>
-
-<!-- WORKFLOW -->
-<section class="card reveal">
-  <h2>🔄 Workflow</h2>
-  <ol>
-    <li>Data Collection</li>
-    <li>Data Cleaning</li>
-    <li>Processing</li>
-    <li>Dashboard Creation</li>
-    <li>Insights Generation</li>
-  </ol>
-</section>
-
-<!-- TIMELINE -->
-<section class="card reveal">
-  <h2>⏱️ Timeline</h2>
-  <div class="timeline">
-    <div class="timeline-item">Data Collection</div>
-    <div class="timeline-item">Preprocessing (Colab)</div>
-    <div class="timeline-item">Dashboard Creation</div>
-    <div class="timeline-item">Insights</div>
-  </div>
-</section>
-
-<!-- ROLE -->
-<section class="card reveal">
-  <h2>👩‍💻 My Role</h2>
-  <ul>
-    <li>Data preprocessing using Python</li>
-    <li>Dashboard creation using Power BI</li>
-    <li>DAX implementation</li>
-    <li>Website development</li>
-  </ul>
 </section>
 
 <!-- CONTACT -->
 <section id="contact" class="card reveal">
   <h2>📞 Contact</h2>
-  <p><strong>Name:</strong> Naga Venkata Vasavi Jayavarapu</p>
-  <p><strong>LinkedIn:</strong>
-    <a href="https://www.linkedin.com/in/naga-venkata-vasavi-jayavarapu-69ba87317/" target="_blank">
-      View Profile
-    </a>
+  <p><strong>Name:</strong> Vasavi</p>
+  <p>
+    <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
   </p>
 </section>
 
@@ -176,7 +136,7 @@
 </footer>
 
 <script>
-// reveal animation
+// animation
 window.addEventListener("scroll", () => {
   document.querySelectorAll(".reveal").forEach(el => {
     if (el.getBoundingClientRect().top < window.innerHeight - 100) {
